@@ -1,0 +1,31 @@
+# Fluxo de trabalho básico
+
+name: CI
+
+# Controla quando o Fluxo de Trabalho será executado, eventos
+on:
+  push:
+    branches: [main] 
+
+  # Permite execução deste Fluxo de Trabalho manualmente na guia de ações 
+  workflow_dispatch:
+
+# Uma execução de fluxo de trabalho é composta por um ou mais trabalhos que podem ser executados sequencialmente ou em paralelo
+jobs:
+  # Este fluxo de trabalho contém um único Job chamado "build"
+  CI:
+    # Runner
+    runs-on: ubuntu-latest
+
+    # Passos a serem executados
+    steps:
+      # Faça check-out do seu repositório $GITHUB_WORKSPACE, para que seu JOB possa acessá-lo
+      - uses: actions/checkout@v2
+      
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: 12.22.12 
+      
+
+     
