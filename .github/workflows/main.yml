@@ -53,7 +53,7 @@ jobs:
           file: src/Dockerfile
           push: true
           Tags: |
-            fabiocavadas/aula-conversao-temperatura:v1
+            fabiocavadas/aula-conversao-temperatura:${{github.run_number}}
             fabiocavadas/aula-conversao-temperatura:latest
 
         
