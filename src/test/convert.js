@@ -1,7 +1,7 @@
 const convert = require('../convert')
 var expect  = require("chai").expect;
 
-describe('Conversor de Temperatura', () => {
+describe('Conversor de Temperatura - V2', () => {
 
     it('Deve converter corretamente Fahrenheit para Celsius', (done) => {
 
