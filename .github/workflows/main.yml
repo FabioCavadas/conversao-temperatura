@@ -47,6 +47,8 @@ jobs:
         Tags: |
           fabiocavadas/aula-conversao-temperatura:v1
           fabiocavadas/aula-conversao-temperatura:latest
+
+        
       
 
      
